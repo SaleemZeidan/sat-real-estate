@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Office Spaces for Lease | SAT Real Estate</title>
+    <meta name="description" content="Search furnished, fitted-out, or core & shell offices across Saudi Arabia. Find your next corporate headquarters with SAT Real Estate.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="nav" id="navbar" data-aos="fade-down">
+        <div class="nav-container">
+             <a href="index.html" class="logo">
+                <img src="images/sat-logo.png" alt="SAT Real Estate Logo" />
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="spaces.html" class="active">Explore Spaces</a>
+                <a href="tenant.html">For Tenants</a>
+                <a href="landlord.html">For Landlords</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero" data-aos="fade-in">
+            <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-delay="100">Office Spaces</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Discover premium office environments designed for productivity and prestige.</p>
+            </div>
+        </section>
+
+        <!-- FILTER PANEL -->
+        <section class="section-light" data-aos="fade-up">
+            <h2>Filter Your Search</h2>
+            <form id="officeFilter" class="filter-panel">
+                <div class="filter-group">
+                    <label for="city">City</label>
+                    <select name="city" id="city">
+                        <option value="">All Cities</option>
+                        <option value="Riyadh">Riyadh</option>
+                        <option value="Jeddah">Jeddah</option>
+                        <option value="Dammam">Dammam</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="minArea">Area (sqm)</label>
+                    <div class="range-inputs">
+                        <input type="number" name="minArea" id="minArea" placeholder="Min" min="0"/>
+                        <span>–</span>
+                        <input type="number" name="maxArea" placeholder="Max" min="0"/>
+                    </div>
+                </div>
+                <div class="filter-group checkbox-group">
+                    <label><input type="checkbox" name="type" value="furnished"/> Furnished</label>
+                    <label><input type="checkbox" name="type" value="fitted"/> Fitted-Out</label>
+                    <label><input type="checkbox" name="type" value="shell"/> Core & Shell</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Search Offices</button>
+            </form>
+        </section>
+
+        <!-- RESULTS GRID -->
+        <section class="section-light results-section" data-aos="fade-up">
+            <div id="officeResults" class="cards featured-cards">
+                <p>Loading Office listings...</p>
+            </div>
+        </section>
+
+        <!-- LANDLORD CTA -->
+        <section class="section-dark" data-aos="fade-up">
+            <h2>Landlords: List Your Office</h2>
+            <p class="section-subtitle">Reach Saudi Arabia's top tenants by listing your office space with SAT Real Estate.</p>
+            <div class="section-cta">
+                <button class="btn btn-primary open-modal" data-modal-id="listingModal">List Your Office</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- OFFICE LISTING MODAL -->
+    <div class="modal-overlay" id="listingModal">
+        <div class="modal-content" data-aos="zoom-in">
+            <button class="modal-close" aria-label="Close Modal">&times;</button>
+            <div id="listingFormContainer">
+                <h2>List Your Office Space</h2>
+                <p class="modal-subtitle">Submit your property details and our team will review and approve your listing.</p>
+                <form id="officeListingForm" class="listing-form">
+                    <fieldset>
+                        <legend>Account Registration</legend>
+                        <div class="form-grid">
+                            <label>First Name<input type="text" name="firstName" required></label>
+                            <label>Last Name<input type="text" name="lastName" required></label>
+                        </div>
+                        <label>Business Email<input type="email" name="email" required></label>
+                        <label>Mobile Number<input type="tel" name="phone" required></label>
+                        <label>Company Name<input type="text" name="company" required></label>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Office Details</legend>
+                        <label>Building Name / Address<input type="text" name="address" required></label>
+                        <div class="form-grid">
+                            <label>City
+                                <select name="city" required>
+                                    <option value="">Choose…</option>
+                                    <option>Riyadh</option>
+                                    <option>Jeddah</option>
+                                    <option>Dammam</option>
+                                    <option>Al Khobar</option>
+                                    <option>Mecca</option>
+                                    <option>Medina</option>
+                                    <option>Other</option>
+                                </select>
+                            </label>
+                            <label>District<input type="text" name="district" required></label>
+                        </div>
+                        <div class="form-grid">
+                            <label>Total Area (sqm)<input type="number" name="area" min="0" required></label>
+                            <label>Floor Number<input type="number" name="floor" min="0"></label>
+                        </div>
+                        <label>Fit-Out Type
+                            <select name="fitout" required>
+                                <option value="">Choose…</option>
+                                <option>Furnished</option>
+                                <option>Fitted-Out</option>
+                                <option>Core & Shell</option>
+                            </select>
+                        </label>
+                        <div class="form-grid">
+                            <label>Annual Rent (SAR)<input type="number" name="rent" min="0" placeholder="e.g., 500000" required></label>
+                            <label>Parking Spaces<input type="number" name="parking" min="0"></label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Property Features</legend>
+                        <div class="checkbox-grid">
+                            <label><input type="checkbox" name="features" value="ac"/> Air Conditioning</label>
+                            <label><input type="checkbox" name="features" value="elevator"/> Elevator Access</label>
+                            <label><input type="checkbox" name="features" value="security"/> 24/7 Security</label>
+                            <label><input type="checkbox" name="features" value="reception"/> Reception Area</label>
+                            <label><input type="checkbox" name="features" value="meeting"/> Meeting Rooms</label>
+                            <label><input type="checkbox" name="features" value="kitchen"/> Kitchen/Pantry</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Property Media</legend>
+                        <label>Property Images (Max 10 images - JPG, PNG, WebP)
+                            <input type="file" name="images" multiple accept="image/jpeg,image/jpg,image/png,image/webp" class="file-input">
+                            <div class="file-upload-info">Maximum 5MB per image</div>
+                        </label>
+                        
+                        <label>Property Videos (Optional - Max 2 videos - HD/4K only)
+                            <input type="file" name="videos" multiple accept="video/mp4,video/mov,video/avi" class="file-input">
+                            <div class="file-upload-info">Maximum 100MB per video, 5 minutes duration</div>
+                        </label>
+                    </fieldset>
+
+                    <label>Additional Information
+                        <textarea name="notes" rows="4" placeholder="Describe unique features, nearby amenities, transportation access..."></textarea>
+                    </label>
+
+                    <div class="form-disclaimer">
+                        <p><strong>Note:</strong> All listings are subject to review and approval by SAT Real Estate. You will be notified once your listing is approved and published on our platform.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit-btn">Submit for Review</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer-container">
+            <div class="footer-brand">
+                 <img src="images/sat-logo.png" alt="SAT Real Estate Logo" class="footer-logo" />
+                 <p>Saudi Arabia's Premier Commercial Leasing Advisory.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="spaces.html">Explore Spaces</a></li>
+                    <li><a href="tenant.html">Tenant Services</a></li>
+                    <li><a href="landlord.html">Landlord Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>Akaria Plaza, Al Olaya, Riyadh, Saudi Arabia</p>
+                <p><a href="mailto:leasing@satestate.com">leasing@satestate.com</a></p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> SAT Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

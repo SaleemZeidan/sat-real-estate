@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAT Real Estate | Premier Commercial Leasing in Saudi Arabia</title>
+    <meta name="description" content="SAT Real Estate is Saudi Arabia's leading commercial leasing advisory. We connect visionary businesses with exceptional office, retail, and industrial spaces.">
+    
+    <!-- AOS CSS for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="nav" id="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">
+                <img src="images/sat-logo.png" alt="SAT Real Estate Logo" />
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#spaces">Explore Spaces</a>
+                <a href="#tenant">For Tenants</a>
+                <a href="#landlord">For Landlords</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Your Strategic Partner in Saudi Commercial Real Estate</h1>
+                <p>Navigating the Kingdom's dynamic market to find your ideal commercial space and maximize asset value.</p>
+                <div class="btn-group">
+                    <button id="tenantBtn" class="btn btn-hero">I'm a Tenant</button>
+                    <button id="landlordBtn" class="btn btn-hero">I'm a Landlord</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- DYNAMIC INFO PANELS -->
+        <div class="info-panel-container">
+            <section id="tenantBox" class="info-box tenant-box" hidden>
+                <div class="info-content">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"></path><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <h2>Find Your Next Business Location</h2>
+                    <p>Leverage our unparalleled market intelligence to discover and secure the perfect space that aligns with your business strategy and growth objectives.</p>
+                    <div class="btn-group">
+                        <a href="#tenant" class="btn btn-primary">Explore Tenant Services</a>
+                        <a href="#spaces" class="btn btn-secondary">Find Your Space</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="landlordBox" class="info-box landlord-box" hidden>
+                <div class="info-content">
+                    <div class="info-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    </div>
+                    <h2>Maximize Your Asset's Value</h2>
+                    <p>We provide comprehensive advisory and leasing services to position your property effectively, attract high-quality tenants, and enhance your investment returns.</p>
+                    <div class="btn-group">
+                        <a href="#landlord" class="btn btn-primary">Explore Landlord Services</a>
+                        <button id="listPropertyBtn" class="btn btn-secondary">List Your Property</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- FEATURED PROPERTIES SECTION -->
+        <section class="section-light" id="spaces">
+            <h2>Featured Opportunities</h2>
+            <p class="section-subtitle">A selection of premium commercial spaces currently available for lease.</p>
+            <div id="featured-listings" class="cards featured-cards">
+                <p>Loading listings...</p>
+            </div>
+            <div class="section-cta">
+                <a href="#spaces" class="btn btn-primary">Explore All Spaces</a>
+            </div>
+        </section>
+
+        <!-- WHY SAT REAL ESTATE -->
+        <section class="section-dark" id="why">
+            <h2>The SAT Estate Advantage</h2>
+            <p class="section-subtitle">Unlocking value through market intelligence, strategic advice, and flawless execution.</p>
+            <div class="cards icon-cards">
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                    </div>
+                    <h3>Market Expertise</h3>
+                    <p>Deep, data-driven insights into Saudi Arabia's evolving commercial landscape.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </div>
+                    <h3>Client-First Strategy</h3>
+                    <p>Advisory services tailored to your specific goals, ensuring your interests are always protected.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    </div>
+                    <h3>Execution Power</h3>
+                    <p>Full-service handling: from market positioning to negotiation and successful onboarding.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TENANT SERVICES SECTION -->
+        <section class="section-light" id="tenant">
+            <h2>Tenant Services</h2>
+            <p class="section-subtitle">Comprehensive support to find and secure your ideal commercial space.</p>
+            <div class="cards service-gateway-cards">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Market Research & Analysis</h3>
+                        <p>In-depth market intelligence and location analysis to identify the best opportunities for your business.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Space Planning & Design</h3>
+                        <p>Expert guidance on space optimization and design to maximize functionality and efficiency.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Lease Negotiation</h3>
+                        <p>Professional negotiation services to secure favorable terms and protect your interests.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LANDLORD SERVICES SECTION -->
+        <section class="section-dark" id="landlord">
+            <h2>Landlord Services</h2>
+            <p class="section-subtitle">Maximize your property's potential with our comprehensive leasing solutions.</p>
+            <div class="cards service-gateway-cards">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Property Marketing</h3>
+                        <p>Strategic marketing campaigns to showcase your property to qualified tenants.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Tenant Screening</h3>
+                        <p>Thorough vetting process to identify and secure high-quality, reliable tenants.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Asset Management</h3>
+                        <p>Ongoing property management and optimization to enhance long-term value.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section-light" id="contact">
+            <h2>Get in Touch</h2>
+            <p class="section-subtitle">Ready to find your perfect commercial space or maximize your property's potential?</p>
+            
+            <div class="contact-container">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="listing-form">
+                        <fieldset>
+                            <legend>Contact Information</legend>
+                            <div class="form-grid">
+                                <label>
+                                    First Name *
+                                    <input type="text" name="firstName" required>
+                                </label>
+                                <label>
+                                    Last Name *
+                                    <input type="text" name="lastName" required>
+                                </label>
+                            </div>
+                            <div class="form-grid">
+                                <label>
+                                    Email *
+                                    <input type="email" name="email" required>
+                                </label>
+                                <label>
+                                    Phone Number *
+                                    <input type="tel" name="phone" required>
+                                </label>
+                            </div>
+                            <label>
+                                Company
+                                <input type="text" name="company">
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Inquiry Details</legend>
+                            <label>
+                                I am interested in *
+                                <select name="inquiryType" required>
+                                    <option value="">Select an option</option>
+                                    <option value="tenant">Finding commercial space (Tenant)</option>
+                                    <option value="landlord">Leasing my property (Landlord)</option>
+                                    <option value="consultation">General consultation</option>
+                                </select>
+                            </label>
+                            <label>
+                                Message *
+                                <textarea name="message" rows="5" placeholder="Tell us about your requirements..." required></textarea>
+                            </label>
+                        </fieldset>
+
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send Message</button>
+                    </form>
+                    
+                    <!-- Debug Panel -->
+                    <div class="debug-panel" style="margin-top: 2rem; padding: 1rem; background: #f0f0f0; border-radius: 8px; font-size: 0.9rem;">
+                        <h4>Debug Tools</h4>
+                        <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                            <button id="testEmailBtn" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Test Email</button>
+                            <button id="checkHealthBtn" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Check Health</button>
+                        </div>
+                        <div id="debugOutput" style="margin-top: 1rem; padding: 0.5rem; background: white; border-radius: 4px; min-height: 50px; font-family: monospace; font-size: 0.8rem; white-space: pre-wrap;"></div>
+                    </div>
+                </div>
+
+                <div class="contact-info-wrapper">
+                    <div class="contact-info-item">
+                        <h3>Office Location</h3>
+                        <p>Akaria Plaza<br>Al Olaya District<br>Riyadh, Saudi Arabia</p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:leasing@satestate.com">leasing@satestate.com</a></p>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <h3>Business Hours</h3>
+                        <p>Sunday - Thursday: 9:00 AM - 6:00 PM<br>Friday - Saturday: Closed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- PROPERTY TYPE SELECTION MODAL -->
+    <div class="modal-overlay" id="propertyTypeModal">
+        <div class="modal-content property-type-modal">
+            <button class="modal-close" aria-label="Close Modal">&times;</button>
+            <div class="property-type-content">
+                <h2>What Type of Property Do You Want to List?</h2>
+                <p class="modal-subtitle">Select the category that best describes your property to get started with the listing process.</p>
+                
+                <div class="property-type-grid">
+                    <button class="property-type-card" data-property-type="office">
+                        <div class="property-type-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 7H5c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2z"></path><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                        </div>
+                        <h3>Office Space</h3>
+                        <p>Corporate headquarters, executive suites, co-working spaces</p>
+                    </button>
+                    
+                    <button class="property-type-card" data-property-type="retail">
+                        <div class="property-type-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2z"></path><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path></svg>
+                        </div>
+                        <h3>Retail Space</h3>
+                        <p>Shopfronts, mall units, kiosks, food court spaces</p>
+                    </button>
+                    
+                    <button class="property-type-card" data-property-type="warehouse">
+                        <div class="property-type-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 8.35V20a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8.35A2 2 0 0 1 3.26 6.5l8-3.2a2 2 0 0 1 1.48 0l8 3.2A2 2 0 0 1 22 8.35Z"></path><path d="M6 18h12"></path><path d="M6 14h12"></path><path d="m6 10 6-2 6 2"></path></svg>
+                        </div>
+                        <h3>Warehouse</h3>
+                        <p>Industrial facilities, logistics hubs, storage spaces</p>
+                    </button>
+                    
+                    <button class="property-type-card" data-property-type="land">
+                        <div class="property-type-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 19a9 9 0 0 1 0-14"></path><path d="M16 5a9 9 0 0 1 0 14"></path><circle cx="12" cy="12" r="2"></circle><path d="M12 19a9 9 0 0 0 9-9"></path></svg>
+                        </div>
+                        <h3>Land & Plots</h3>
+                        <p>Commercial plots, development sites, mixed-use land</p>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="images/sat-logo.png" alt="SAT Real Estate Logo" class="footer-logo" />
+                <p>Saudi Arabia's Premier Commercial Leasing Advisory.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#spaces">Explore Spaces</a></li>
+                    <li><a href="#tenant">Tenant Services</a></li>
+                    <li><a href="#landlord">Landlord Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>Akaria Plaza, Al Olaya, Riyadh, Saudi Arabia</p>
+                <p><a href="mailto:leasing@satestate.com">leasing@satestate.com</a></p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> SAT Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

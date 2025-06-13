@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SAT Real Estate</title>
+    <meta name="description" content="Get in touch with the SAT Real Estate advisory team in Riyadh, Saudi Arabia. Let's discuss your commercial leasing goals today.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="nav" id="navbar" data-aos="fade-down">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/sat-logo.png" alt="SAT Real Estate Logo" />
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="spaces.html">Explore Spaces</a>
+                <a href="tenant.html">For Tenants</a>
+                <a href="landlord.html">For Landlords</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" data-aos="fade-in">
+            <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-delay="100">Let's Start a Conversation</h1>
+                <p data-aos="fade-up" data-aos-delay="200">We are here to answer your questions and help you achieve your commercial real estate objectives. Reach out to our team today.</p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="section-light contact-page-section" data-aos="fade-up">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <form action="#" method="POST" class="listing-form">
+                        <div class="form-grid">
+                            <label>First Name<input type="text" name="firstName" placeholder="e.g., Abdullah" required></label>
+                            <label>Last Name<input type="text" name="lastName" placeholder="e.g., Al-Saud" required></label>
+                        </div>
+                        <label>Email Address<input type="email" name="email" placeholder="e.g., name@company.com" required></label>
+                        <label>Phone Number<input type="tel" name="phone" placeholder="+966 5..."></label>
+                        <label>I am a...
+                            <select name="clientType">
+                                <option>Tenant</option>
+                                <option>Landlord</option>
+                                <option>Investor</option>
+                                <option>Other</option>
+                            </select>
+                        </label>
+                        <label>Your Message
+                            <textarea name="message" rows="5" placeholder="Please describe your inquiry..." required></textarea>
+                        </label>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Submit Inquiry</button>
+                    </form>
+                </div>
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>Contact Information</h2>
+                    <div class="contact-info-item">
+                        <h3>Our Office</h3>
+                        <p>Akaria Plaza, Gate D, 6th Floor<br>Al Olaya Road, Al Olaya District<br>Riyadh 12244, Saudi Arabia</p>
+                    </div>
+                     <div class="contact-info-item">
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:leasing@satestate.com">leasing@satestate.com</a></p>
+                    </div>
+                     <div class="contact-info-item">
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+966560487696">+966 560 487 696</a></p>
+                    </div>
+                     <div class="contact-info-item">
+                        <h3>Business Hours</h3>
+                        <p>Sunday - Thursday: 9:00 AM - 6:00 PM</p>
+                        <p>Friday - Saturday: Closed</p>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=7235+Al+Olaya+Road,+Al+Olaya+District,+Akaria+Plaza,+Riyadh,+Saudi+Arabia" target="_blank" class="btn btn-secondary map-button">
+                        View on Google Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer-container">
+            <div class="footer-brand">
+                 <img src="images/sat-logo.png" alt="SAT Real Estate Logo" class="footer-logo" />
+                 <p>Saudi Arabia's Premier Commercial Leasing Advisory.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="spaces.html">Explore Spaces</a></li>
+                    <li><a href="tenant.html">Tenant Services</a></li>
+                    <li><a href="landlord.html">Landlord Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>Akaria Plaza, Al Olaya, Riyadh, Saudi Arabia</p>
+                <p><a href="mailto:leasing@satestate.com">leasing@satestate.com</a></p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> SAT Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | SAT Real Estate</title>
+    <meta name="description" content="Comprehensive commercial real estate advisory services for both tenants and landlords across Saudi Arabia, delivered by SAT Real Estate.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="nav" id="navbar" data-aos="fade-down">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/sat-logo.png" alt="SAT Real Estate Logo" />
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="spaces.html">Explore Spaces</a>
+                <a href="tenant.html">For Tenants</a>
+                <a href="landlord.html">For Landlords</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+                <button class="nav-toggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" data-aos="fade-in">
+            <div class="hero-content">
+                <h1 data-aos="fade-up" data-aos-delay="100">Full-Spectrum Commercial Advisory</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Whether you are finding a space or filling one, our dedicated teams provide expert guidance and execution.</p>
+            </div>
+        </section>
+
+        <!-- SERVICES GATEWAY -->
+        <section class="section-light" data-aos="fade-up">
+             <h2>Specialized Services for Every Client</h2>
+             <p class="section-subtitle">We offer two distinct advisory paths, ensuring your unique needs are met with focused expertise and undivided attention.</p>
+            <div class="cards service-gateway-cards">
+                <!-- Tenant Services Card -->
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-image-container">
+                        <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Team collaborating in a modern office">
+                    </div>
+                    <div class="card-content">
+                        <h3>For Tenants</h3>
+                        <p>Let us be your advocate. We provide exclusive representation to help you find and secure the perfect property on the best possible terms.</p>
+                        <a href="tenant.html" class="btn btn-secondary">Explore Tenant Services</a>
+                    </div>
+                </div>
+                <!-- Landlord Services Card -->
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                     <div class="card-image-container">
+                        <img src="https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Exterior of a modern commercial building">
+                    </div>
+                    <div class="card-content">
+                        <h3>For Landlords</h3>
+                        <p>Maximize your asset's value with our strategic leasing services. We connect your property with a network of qualified, high-quality tenants.</p>
+                        <a href="landlord.html" class="btn btn-secondary">Explore Landlord Services</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" data-aos="fade-up">
+        <div class="footer-container">
+            <div class="footer-brand">
+                 <img src="images/sat-logo.png" alt="SAT Real Estate Logo" class="footer-logo" />
+                 <p>Saudi Arabia's Premier Commercial Leasing Advisory.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="spaces.html">Explore Spaces</a></li>
+                    <li><a href="tenant.html">Tenant Services</a></li>
+                    <li><a href="landlord.html">Landlord Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Get in Touch</h4>
+                <p>Akaria Plaza, Al Olaya, Riyadh, Saudi Arabia</p>
+                <p><a href="mailto:leasing@satestate.com">leasing@satestate.com</a></p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Twitter">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> SAT Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
